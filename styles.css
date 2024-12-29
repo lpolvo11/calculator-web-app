@@ -1,0 +1,113 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: absolute;
+  top: 230px;
+}
+
+.Calculator-app {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button.plus {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button.minus {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+button.times {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+button.divided {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+button.clear {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.result {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #28a745;
+  margin-top: 10px;
+}
+
+.error {
+  font-size: 1rem;
+  color: #dc3545;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+  .Calculator-app {
+    width: 100%;
+    padding: 15px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  input[type="text"] {
+    font-size: 0.9rem;
+  }
+}
